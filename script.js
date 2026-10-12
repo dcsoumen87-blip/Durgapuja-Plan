@@ -11,7 +11,7 @@
   const chosenActivities = new Set();
 
   const EMAILJS_PUBLIC_KEY = "T3_hyH48oEjbcJKDo";
-  const EMAILJS_SERVICE_ID = "service_rkq2zur";
+  const EMAILJS_SERVICE_ID = "service_jlilyv7";
   const EMAILJS_TEMPLATE_ID = "template_dc6whq5";
 
   const today = new Date();
