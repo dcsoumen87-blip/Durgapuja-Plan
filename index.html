@@ -1,156 +1,421 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffedf2">
   <meta name="description" content="A little Durga Puja plan, made with love.">
+
   <title>Ei Pujo Te? ♡</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-  <main class="shell">
-    <div class="brandline"><span>✦</span> A LITTLE PUJO PLAN <span>✦</span></div>
 
+<body>
+
+  <div class="ambient" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <main class="shell">
+
+    <div class="brandline">
+      <span>✦</span> A LITTLE PUJO PLAN <span>✦</span>
+    </div>
+
+    <!-- PANEL 1: WELCOME -->
     <section class="panel active" data-panel="0" aria-labelledby="welcome-title">
+
       <div class="hero-art">
         <div class="pandal-glow"></div>
         <div class="moon">✦</div>
-        <div class="hero-hearts" aria-hidden="true"><span>♥</span><span>♡</span><span>♥</span></div>
-        <div class="couple" aria-hidden="true"><span class="person person-a"></span><span class="person person-b"></span></div>
+
+        <div class="hero-hearts" aria-hidden="true">
+          <span>♥</span><span>♡</span><span>♥</span>
+        </div>
+
+        <div class="couple" aria-hidden="true">
+          <span class="person person-a"></span>
+          <span class="person person-b"></span>
+        </div>
+
         <div class="hero-copy">
           <p class="kicker">A tiny question, a big little plan</p>
-          <h1 id="welcome-title">Ei Durga Pujo te<br>ghurte jabe amar sathe? <span>♡</span></h1>
-          <p class="hero-sub">Pandal hopping, adda, good food<br>ar onek shundor memories!</p>
+
+          <h1 id="welcome-title">
+            Ei Durga Pujo te<br>
+            ghurte jabe amar sathe? <span>♡</span>
+          </h1>
+
+          <p class="hero-sub">
+            Pandal hopping, adda, good food<br>
+            ar onek shundor memories!
+          </p>
         </div>
       </div>
+
       <div class="panel-body welcome-body">
-        <button class="btn primary full" id="yesBtn">Haan, Cholo! ❤️</button>
-        <button class="btn dark full" id="maybeBtn">Dekhi... 🤔</button>
+        <button class="btn primary full" id="yesBtn">
+          Haan, Cholo! ❤️
+        </button>
+
+        <button class="btn dark full" id="maybeBtn">
+          Dekhi... 🤔
+        </button>
+
         <p class="micro">made with a little courage & lots of love</p>
       </div>
     </section>
 
+
+    <!-- PANEL 2: DATE AND TIME -->
     <section class="panel" data-panel="1" aria-labelledby="date-title">
+
       <div class="panel-body">
         <p class="kicker">STEP 01 · PICK OUR DAY</p>
+
         <h2 id="date-title">Tumi Kakhon Free? <span>💗</span></h2>
         <p class="subtitle">Cholo ekta din choose kori</p>
+
         <div class="glass-card">
           <label for="date">🗓️ Tarikh Bachai</label>
           <input id="date" type="date" required>
+
           <div class="field-grid">
-            <div class="field"><label for="timeSlot">🕰️ Time Select Koro</label>
+            <div class="field">
+              <label for="timeSlot">🕰️ Time Select Koro</label>
+
               <select id="timeSlot">
-                <option value="Morning (8 AM - 11 AM)">☀️ Morning · 8 AM–11 AM</option>
-                <option value="Afternoon (12 PM - 4 PM)">🌤️ Afternoon · 12 PM–4 PM</option>
-                <option value="Evening (5 PM - 9 PM)" selected>🌇 Evening · 5 PM–9 PM</option>
-                <option value="Night (9 PM - 12 AM)">🌙 Night · 9 PM–12 AM</option>
+                <option value="Morning (8 AM - 11 AM)">
+                  ☀️ Morning · 8 AM–11 AM
+                </option>
+
+                <option value="Afternoon (12 PM - 4 PM)">
+                  🌤️ Afternoon · 12 PM–4 PM
+                </option>
+
+                <option value="Evening (5 PM - 9 PM)" selected>
+                  🌇 Evening · 5 PM–9 PM
+                </option>
+
+                <option value="Night (9 PM - 12 AM)">
+                  🌙 Night · 9 PM–12 AM
+                </option>
               </select>
             </div>
           </div>
         </div>
-        <div class="nav-row"><button class="btn soft" data-back>← Back</button><button class="btn primary" data-next>Next →</button></div>
+
+        <div class="nav-row">
+          <button class="btn soft" data-back>← Back</button>
+          <button class="btn primary" data-next>Next →</button>
+        </div>
       </div>
     </section>
 
+
+    <!-- PANEL 3: LOCATIONS -->
     <section class="panel" data-panel="2" aria-labelledby="places-title">
+
       <div class="panel-body">
         <p class="kicker">STEP 02 · OUR LITTLE TOUR</p>
+
         <h2 id="places-title">📍 Kothay Kothay Jabo?</h2>
         <p class="subtitle">Tumi jaiga gulo select koro (ek ba anek gulo)</p>
+
         <div class="option-grid places-grid" id="placesGrid">
-          <button class="tile" data-place="Kolkata New Market"><span class="tile-photo photo-market">🏮</span><span class="tile-label">Kolkata New Market</span><span class="check">✓</span></button>
-          <button class="tile" data-place="College Street"><span class="tile-photo photo-college">📚</span><span class="tile-label">College Street</span><span class="check">✓</span></button>
-          <button class="tile" data-place="Sreebhumi"><span class="tile-photo photo-sree">✨</span><span class="tile-label">Sreebhumi</span><span class="check">✓</span></button>
-          <button class="tile" data-place="Santosh Mitra Square"><span class="tile-photo photo-santosh">🎆</span><span class="tile-label">Santosh Mitra Square</span><span class="check">✓</span></button>
-          <button class="tile" data-place="Deshapriya Park"><span class="tile-photo photo-deshapriya">🌺</span><span class="tile-label">Deshapriya Park</span><span class="check">✓</span></button>
-          <button class="tile" data-place="Mudiali Club"><span class="tile-photo photo-mudiali">🪔</span><span class="tile-label">Mudiali Club</span><span class="check">✓</span></button>
-          <button class="tile" data-place="Ahiritola"><span class="tile-photo photo-ahiritola">🌟</span><span class="tile-label">Ahiritola</span><span class="check">✓</span></button>
-          <button class="tile" data-place="Kumartuli"><span class="tile-photo photo-kumartuli">🎨</span><span class="tile-label">Kumartuli</span><span class="check">✓</span></button>
-          <button class="tile custom-tile" data-place="Custom place"><span class="tile-photo">＋</span><span class="tile-label">Ar kono jaiga?</span><small>(Custom likhte paro)</small><span class="check">✓</span></button>
+
+          <button class="tile" data-place="Kolkata New Market">
+            <span class="tile-photo photo-market">🏮</span>
+            <span class="tile-label">Kolkata New Market</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-place="College Street">
+            <span class="tile-photo photo-college">📚</span>
+            <span class="tile-label">College Street</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-place="Sreebhumi">
+            <span class="tile-photo photo-sree">✨</span>
+            <span class="tile-label">Sreebhumi</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-place="Santosh Mitra Square">
+            <span class="tile-photo photo-santosh">🎆</span>
+            <span class="tile-label">Santosh Mitra Square</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-place="Deshapriya Park">
+            <span class="tile-photo photo-deshapriya">🌺</span>
+            <span class="tile-label">Deshapriya Park</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-place="Mudiali Club">
+            <span class="tile-photo photo-mudiali">🪔</span>
+            <span class="tile-label">Mudiali Club</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-place="Ahiritola">
+            <span class="tile-photo photo-ahiritola">🌟</span>
+            <span class="tile-label">Ahiritola</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-place="Kumartuli">
+            <span class="tile-photo photo-kumartuli">🎨</span>
+            <span class="tile-label">Kumartuli</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile custom-tile" data-place="Custom place">
+            <span class="tile-photo">＋</span>
+            <span class="tile-label">Ar kono jaiga?</span>
+            <small>(Custom likhte paro)</small>
+            <span class="check">✓</span>
+          </button>
+
         </div>
-        <div class="field custom-place hidden" id="customPlaceWrap"><label for="customPlace">Tomar pochonder jaiga</label><input id="customPlace" maxlength="100" placeholder="Place name likho..."></div>
-        <div class="nav-row"><button class="btn soft" data-back>← Back</button><button class="btn primary" data-next>Next →</button></div>
+
+        <div class="field custom-place hidden" id="customPlaceWrap">
+          <label for="customPlace">Tomar pochonder jaiga</label>
+          <input id="customPlace" maxlength="100" placeholder="Place name likho...">
+        </div>
+
+        <div class="nav-row">
+          <button class="btn soft" data-back>← Back</button>
+          <button class="btn primary" data-next>Next →</button>
+        </div>
       </div>
     </section>
 
+
+    <!-- PANEL 4: ACTIVITIES -->
     <section class="panel" data-panel="3" aria-labelledby="activities-title">
+
       <div class="panel-body">
         <p class="kicker">STEP 03 · OUR VIBE</p>
+
         <h2 id="activities-title">♡ Ki Ki Korbo?</h2>
         <p class="subtitle">Tumi ki ki korte chao amar sathe?</p>
+
         <div class="option-grid activity-grid" id="activityGrid">
-          <button class="tile" data-activity="Pandal Hopping"><span class="tile-photo act-pandal">🙏</span><span class="tile-label">Pandal Hopping</span><span class="check">✓</span></button>
-          <button class="tile" data-activity="Street Food"><span class="tile-photo act-food">🥟</span><span class="tile-label">Street Food</span><span class="check">✓</span></button>
-          <button class="tile" data-activity="Coffee/Tea Break"><span class="tile-photo act-coffee">☕</span><span class="tile-label">Coffee/Tea Break</span><span class="check">✓</span></button>
-          <button class="tile" data-activity="Shopping (New Market)"><span class="tile-photo act-shop">🛍️</span><span class="tile-label">Shopping (New Market)</span><span class="check">✓</span></button>
-          <button class="tile" data-activity="Adda & Photos"><span class="tile-photo act-photo">📸</span><span class="tile-label">Adda & Photos</span><span class="check">✓</span></button>
-          <button class="tile" data-activity="Ganga Ghat Visit"><span class="tile-photo act-ghat">🌉</span><span class="tile-label">Ganga Ghat Visit</span><span class="check">✓</span></button>
-          <button class="tile" data-activity="Night Pandal Tour"><span class="tile-photo act-night">🌃</span><span class="tile-label">Night Pandal Tour</span><span class="check">✓</span></button>
-          <button class="tile" data-activity="Surprise Plan"><span class="tile-photo act-surprise">🎁</span><span class="tile-label">Surprise Plan</span><span class="check">✓</span></button>
+
+          <button class="tile" data-activity="Pandal Hopping">
+            <span class="tile-photo act-pandal">🙏</span>
+            <span class="tile-label">Pandal Hopping</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-activity="Street Food">
+            <span class="tile-photo act-food">🥟</span>
+            <span class="tile-label">Street Food</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-activity="Coffee/Tea Break">
+            <span class="tile-photo act-coffee">☕</span>
+            <span class="tile-label">Coffee/Tea Break</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-activity="Shopping (New Market)">
+            <span class="tile-photo act-shop">🛍️</span>
+            <span class="tile-label">Shopping (New Market)</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-activity="Adda & Photos">
+            <span class="tile-photo act-photo">📸</span>
+            <span class="tile-label">Adda & Photos</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-activity="Ganga Ghat Visit">
+            <span class="tile-photo act-ghat">🌉</span>
+            <span class="tile-label">Ganga Ghat Visit</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-activity="Night Pandal Tour">
+            <span class="tile-photo act-night">🌃</span>
+            <span class="tile-label">Night Pandal Tour</span>
+            <span class="check">✓</span>
+          </button>
+
+          <button class="tile" data-activity="Surprise Plan">
+            <span class="tile-photo act-surprise">🎁</span>
+            <span class="tile-label">Surprise Plan</span>
+            <span class="check">✓</span>
+          </button>
+
         </div>
-        <div class="nav-row"><button class="btn soft" data-back>← Back</button><button class="btn primary" data-next>Next →</button></div>
+
+        <div class="nav-row">
+          <button class="btn soft" data-back>← Back</button>
+          <button class="btn primary" data-next>Next →</button>
+        </div>
       </div>
     </section>
 
+
+    <!-- PANEL 5: SPECIAL MESSAGE -->
     <section class="panel" data-panel="4" aria-labelledby="notes-title">
+
       <div class="panel-body">
         <p class="kicker">STEP 04 · MAKE IT OURS</p>
+
         <h2 id="notes-title">♡ Kono Special Iccha?</h2>
-        <p class="subtitle">Jodi kono specific kichu korte chao, likhe dao (optional)</p>
-        <div class="field"><label for="special">Special request <span class="optional">(optional)</span></label><textarea id="special" maxlength="200" rows="4" placeholder="Jemon: specific pandal, food item, photo shoot, etc..."></textarea><div class="counter"><span id="specialCount">0</span>/200</div></div>
-        <div class="field"><label for="message">💗 Amar Jonno Kono Message? 💗</label><textarea id="message" maxlength="300" rows="4" placeholder="Jeta bolte chao... 😊"></textarea><div class="counter"><span id="messageCount">0</span>/300</div></div>
-        <div class="nav-row"><button class="btn soft" data-back>← Back</button><button class="btn primary" id="reviewBtn">Final Dekho →</button></div>
+        <p class="subtitle">
+          Jodi kono specific kichu korte chao, likhe dao (optional)
+        </p>
+
+        <div class="field">
+          <label for="special">
+            Special request <span class="optional">(optional)</span>
+          </label>
+
+          <textarea id="special" maxlength="200" rows="4"
+            placeholder="Jemon: specific pandal, food item, photo shoot, etc..."></textarea>
+
+          <div class="counter">
+            <span id="specialCount">0</span>/200
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">💗 Amar Jonno Kono Message? 💗</label>
+
+          <textarea id="message" maxlength="300" rows="4"
+            placeholder="Jeta bolte chao... 😊"></textarea>
+
+          <div class="counter">
+            <span id="messageCount">0</span>/300
+          </div>
+        </div>
+
+        <div class="nav-row">
+          <button class="btn soft" data-back>← Back</button>
+          <button class="btn primary" id="reviewBtn">Final Dekho →</button>
+        </div>
       </div>
     </section>
 
+
+    <!-- PANEL 6: CONFIRM AND SUBMIT -->
     <section class="panel" data-panel="5" aria-labelledby="confirm-title">
+
       <div class="panel-body">
         <p class="kicker">ONE LAST LOOK</p>
+
         <h2 id="confirm-title">♡ Confirm Koro</h2>
         <p class="subtitle">Shob thik acho? Ekbar dekhe nao</p>
+
         <div class="summary-card" id="summary"></div>
-        <button class="btn primary full" id="submitBtn">➤ Submit</button>
-        <button class="btn soft full edit-btn" data-back>← Edit</button>
+
+        <button class="btn primary full" id="submitBtn">
+          ➤ Submit
+        </button>
+
+        <button class="btn soft full edit-btn" data-back>
+          ← Edit
+        </button>
+
         <p class="micro">A little plan for a lovely Pujo day ♡</p>
       </div>
     </section>
 
+
+    <!-- PANEL 7: LOADING -->
     <section class="panel loading-panel" data-panel="6" aria-labelledby="loading-title">
+
       <div class="loading-art">
-        <div class="loading-couple"><span class="person person-a"></span><span class="person person-b"></span></div>
-        <div class="float-hearts" aria-hidden="true"><span>♥</span><span>♡</span><span>♥</span><span>♡</span></div>
+        <div class="loading-couple">
+          <span class="person person-a"></span>
+          <span class="person person-b"></span>
+        </div>
+
+        <div class="float-hearts" aria-hidden="true">
+          <span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+        </div>
       </div>
+
       <div class="panel-body">
         <h2 id="loading-title">Plan Banachhi... ❤️</h2>
         <p class="subtitle">Amader Pujor ghora-ta special banachhi... ✨</p>
-        <div class="progress"><span id="progressBar"></span></div>
+
+        <div class="progress">
+          <span id="progressBar"></span>
+        </div>
+
         <p class="micro" id="loadingCaption">Ektu darao... ♡</p>
       </div>
     </section>
 
+
+    <!-- PANEL 8: SUCCESS -->
     <section class="panel" data-panel="7" aria-labelledby="success-title">
-      <div class="success-art"><div class="success-couple"><span class="person person-a"></span><span class="person person-b"></span></div><div class="confetti" aria-hidden="true">♥　✦　♡　♥　✧</div></div>
+
+      <div class="success-art">
+        <div class="success-couple">
+          <span class="person person-a"></span>
+          <span class="person person-b"></span>
+        </div>
+
+        <div class="confetti" aria-hidden="true">
+          ♥　✦　♡　♥　✧
+        </div>
+      </div>
+
       <div class="panel-body">
         <p class="kicker">OUR LITTLE ADVENTURE</p>
+
         <h2 id="success-title">Ho Gelo! 🎉</h2>
-        <p class="subtitle success-copy">Tomar plan ready!<br>Ebar eksathe onek shundor memories banabo! ❤️</p>
+
+        <p class="subtitle success-copy">
+          Tomar plan ready!<br>
+          Ebar eksathe onek shundor memories banabo! ❤️
+        </p>
+
         <div class="success-summary" id="successSummary"></div>
-        <button class="btn primary full" id="restartBtn">⟳ Abar Plan Korbo</button>
-        <button class="btn dark full" id="shareBtn">♧ Share Plan</button>
+
+        <button class="btn primary full" id="restartBtn">
+          ⟳ Abar Plan Korbo
+        </button>
+
+        <button class="btn dark full" id="shareBtn">
+          ♧ Share Plan
+        </button>
+
         <p class="micro">Durga Pujo, good vibes & memories ♡</p>
       </div>
     </section>
 
-    <footer class="footer"><span>✦</span> made with love for Pujo <span>✦</span></footer>
+
+    <footer class="footer">
+      <span>✦</span> made with love for Pujo <span>✦</span>
+    </footer>
+
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   </main>
+
+  <!-- EmailJS Browser SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Website JavaScript -->
   <script src="script.js"></script>
+
 </body>
 </html>
